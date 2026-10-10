@@ -4,7 +4,7 @@
     "slug": "multi-provider-llm-routing-gateway",
     "name": "Multi-Provider LLM Routing Gateway"
   },
-  "current": "content",
+  "current": "done",
   "stages": {
     "intro": {
       "status": "done",
@@ -40,15 +40,26 @@
       "updated_by": "api-key:for-chatgpt-test-2"
     },
     "content": {
-      "status": "in_progress",
-      "summary": "Created eight categories and all 18 Overview lessons; step lessons are being populated and checked, GitHub CI verification remains open.",
+      "status": "done",
+      "summary": "Verified portal content: 8 active categories / 45 lessons (Overview 18: project, structure and 16 enriched What-is lessons with real source; six STEP groups × 4: design, CRD-linked 4M components, source walkthrough, run/check; Conclusion 3). Verified all 6 system-design INKP visualizations, 7-file CRD trees, source GitHub links, stage readbacks and 6 INKP tabs with zero missing linked docs. Educational offline fixture implementation; real provider SDK integration remains a future task.",
       "outputs": {
         "categories_created": 8,
         "overview_lessons": 18,
-        "step_lessons_written": 8
+        "step_lessons_written": 8,
+        "portal_url": "/practical-case/multi-provider-llm-routing-gateway",
+        "categories": 8,
+        "items": 45,
+        "overview": 18,
+        "step_lessons": 24,
+        "conclusion": 3,
+        "theory_items": 16,
+        "inkp_tabs": 6,
+        "missing_links": 0,
+        "structural_qa": true,
+        "ci_success": true
       },
       "started_at": "2026-10-10T11:58:49.601Z",
-      "finished_at": null,
+      "finished_at": "2026-10-10T12:14:49.188Z",
       "updated_by": "api-key:for-chatgpt-test-2"
     },
     "inkp": {
@@ -67,5 +78,5 @@
       "updated_by": "api-key:for-chatgpt-test-2"
     }
   },
-  "updated_at": "2026-10-10T12:07:26.435Z"
+  "updated_at": "2026-10-10T12:14:49.188Z"
 }
