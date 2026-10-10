@@ -1,7 +1,6 @@
-# Inject one startup-owned provider instead of creating one per request.
-from app.providers.fake_provider import FakeProvider
+# A startup-owned catalog is injected into each request.
+from app.providers.provider_catalog import ProviderCatalog
+_catalog = ProviderCatalog()
 
-_fake_provider = FakeProvider()
-
-def get_completion_provider() -> FakeProvider:
-    return _fake_provider
+def get_completion_provider() -> ProviderCatalog:
+    return _catalog
