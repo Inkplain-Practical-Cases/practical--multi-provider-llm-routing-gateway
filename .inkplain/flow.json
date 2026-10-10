@@ -26,7 +26,7 @@
         "theory_items": 16
       },
       "status": "in_progress",
-      "summary": "Stage 4 partial: STEP-1 pytest lesson and exact GitHub test link saved/read back; STEP-3 six source links corrected and verified. Inspected 18 STEP design/components/implementation lessons, main CI success and six INKP tabs with zero missing links. Full 45-item semantic/source audit remains.",
+      "summary": "45/45 lessons read; STEP-2 Run & check lacks github_file for existing tests/test_completion.py, plus source-link adjacency requires review in design/component lessons. Six STEP-6 implementation source links verified. Six INKP tabs/34 linked executors/0 missing. Not yet final QA.",
       "updated_by": "api-key:for-chatgpt-test-2",
       "finished_at": null
     },
@@ -79,5 +79,5 @@
       "updated_by": "api-key:for-chatgpt-test-2"
     }
   },
-  "updated_at": "2026-10-10T22:14:31.978Z"
+  "updated_at": "2026-10-10T23:21:23.367Z"
 }
