@@ -4,7 +4,7 @@
     "slug": "multi-provider-llm-routing-gateway",
     "name": "Multi-Provider LLM Routing Gateway"
   },
-  "current": "content",
+  "current": "done",
   "stages": {
     "intro": {
       "status": "done",
@@ -40,8 +40,8 @@
       "updated_by": "api-key:for-chatgpt-test-2"
     },
     "content": {
-      "status": "in_progress",
-      "summary": "STEP-3 Components repaired: service_complete GitHub source block now immediately follows its source-backed explanation; MCP read-back verified. Other portal lessons still need quality audit.",
+      "status": "done",
+      "summary": "Stage 4 completed and MCP read-back verified: 8 active categories, 45 lessons (Overview 18 including 16 source-code-backed What-is, six STEP categories of 4 lessons, Conclusion 3). All six System design lessons have step-matched INKP tabs; code walkthroughs and CRD matrices are present. STEP-3 source block ordering repaired and STEP-6 inherited components now include six precise GitHub source references. INKP six tabs and zero missing linked documents verified; Stage 2's 7/7 CI checks already green.",
       "outputs": {
         "categories_created": 8,
         "overview_lessons": 18,
@@ -56,10 +56,11 @@
         "inkp_tabs": 6,
         "missing_links": 0,
         "structural_qa": true,
-        "ci_success": true
+        "ci_success": true,
+        "content_quality_qa": true
       },
       "started_at": "2026-10-10T11:58:49.601Z",
-      "finished_at": null,
+      "finished_at": "2026-10-10T12:39:02.955Z",
       "updated_by": "api-key:for-chatgpt-test-2"
     },
     "inkp": {
@@ -78,5 +79,5 @@
       "updated_by": "api-key:for-chatgpt-test-2"
     }
   },
-  "updated_at": "2026-10-10T12:20:12.642Z"
+  "updated_at": "2026-10-10T12:39:02.955Z"
 }
