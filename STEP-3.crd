@@ -1,8 +1,8 @@
 {
   "version": "1.0",
-  "name": "Multi-provider gateway STEP-2",
+  "name": "Multi-provider gateway STEP-3",
   "source": {
-    "revision": "step-02"
+    "revision": "step-03-policy-based-provider-selection"
   },
   "flows": [
     {
@@ -11,14 +11,12 @@
     }
   ],
   "step": {
-    "no": 2,
+    "no": 3,
     "of": 6,
-    "title": "Provider adapters and deterministic offline fakes",
-    "branch": "step-02-provider-adapters-and-deterministic-offl",
-    "previous": "step-01-unified-request-and-response-contract",
-    "removed": [
-      "be.fake_complete"
-    ]
+    "title": "Policy-based provider selection",
+    "branch": "step-03-policy-based-provider-selection",
+    "previous": "STEP-2.crd",
+    "removed": []
   },
   "components": [
     {
@@ -34,7 +32,7 @@
       "source": {
         "file": "app/feature_completion/router.py",
         "symbol": "complete",
-        "revision": "step-02",
+        "revision": "step-03-policy-based-provider-selection",
         "lines": [
           1,
           14
@@ -79,7 +77,7 @@
         }
       ],
       "attributes": {},
-      "step_change": "changed"
+      "step_change": "unchanged"
     },
     {
       "id": "be.handle_completion",
@@ -94,7 +92,7 @@
       "source": {
         "file": "app/feature_completion/handlers/handle_completion.py",
         "symbol": "handle_completion",
-        "revision": "step-02",
+        "revision": "step-03-policy-based-provider-selection",
         "lines": [
           1,
           9
@@ -134,7 +132,7 @@
         }
       ],
       "attributes": {},
-      "step_change": "changed"
+      "step_change": "unchanged"
     },
     {
       "id": "be.service_complete",
@@ -149,7 +147,7 @@
       "source": {
         "file": "app/feature_completion/services/service_complete.py",
         "symbol": "service_complete",
-        "revision": "step-02",
+        "revision": "step-03-policy-based-provider-selection",
         "lines": [
           1,
           12
@@ -215,7 +213,7 @@
         }
       ],
       "attributes": {},
-      "step_change": "changed"
+      "step_change": "unchanged"
     },
     {
       "id": "be.catalog_resolve",
@@ -223,14 +221,14 @@
       "kind": "function",
       "side": "backend",
       "layer": "provider",
-      "description": "STEP-2 ProviderCatalog.resolve: provider responsibility with deterministic adapter behavior.",
+      "description": "Select cheapest eligible preferred provider based on bounded prompt-size policy.",
       "flows": [
         "completion"
       ],
       "source": {
         "file": "app/providers/provider_catalog.py",
         "symbol": "ProviderCatalog.resolve",
-        "revision": "step-02",
+        "revision": "step-03-policy-based-provider-selection",
         "lines": [
           1,
           15
@@ -256,7 +254,7 @@
         }
       ],
       "attributes": {},
-      "step_change": "added"
+      "step_change": "changed"
     },
     {
       "id": "be.openai_fake",
@@ -271,7 +269,7 @@
       "source": {
         "file": "app/providers/provider_openai_fake.py",
         "symbol": "ProviderOpenAIFake.complete",
-        "revision": "step-02",
+        "revision": "step-03-policy-based-provider-selection",
         "lines": [
           1,
           6
@@ -297,7 +295,7 @@
         }
       ],
       "attributes": {},
-      "step_change": "added"
+      "step_change": "unchanged"
     },
     {
       "id": "be.claude_fake",
@@ -312,7 +310,7 @@
       "source": {
         "file": "app/providers/provider_claude_fake.py",
         "symbol": "ProviderClaudeFake.complete",
-        "revision": "step-02",
+        "revision": "step-03-policy-based-provider-selection",
         "lines": [
           1,
           5
@@ -338,7 +336,7 @@
         }
       ],
       "attributes": {},
-      "step_change": "added"
+      "step_change": "unchanged"
     }
   ],
   "dependencies": [],
