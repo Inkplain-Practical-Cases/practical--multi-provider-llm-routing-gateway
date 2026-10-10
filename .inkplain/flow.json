@@ -26,7 +26,7 @@
         "theory_items": 16
       },
       "status": "in_progress",
-      "summary": "45 lessons and six INKP tabs exist, but final source-link/semantic review remains open; do not count Stage 4 as accepted yet.",
+      "summary": "Stage 4 partial QA: STEP-5 Run & check now explicitly documents offline failing fake-provider test and safe HTTP 503 response. GitHub source link retained. Final 45-lesson semantic/source-link audit remains.",
       "updated_by": "api-key:for-chatgpt-test-2",
       "finished_at": null
     },
@@ -79,5 +79,5 @@
       "updated_by": "api-key:for-chatgpt-test-2"
     }
   },
-  "updated_at": "2026-10-10T17:02:16.603Z"
+  "updated_at": "2026-10-10T20:39:56.308Z"
 }
