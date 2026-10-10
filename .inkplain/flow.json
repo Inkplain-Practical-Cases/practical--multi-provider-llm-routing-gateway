@@ -1,0 +1,56 @@
+{
+  "practical_case": {
+    "id": "xNqmT4v3XkzF521ZY7RA",
+    "slug": "multi-provider-llm-routing-gateway",
+    "name": "Multi-Provider LLM Routing Gateway"
+  },
+  "current": "inkp",
+  "stages": {
+    "intro": {
+      "status": "done",
+      "summary": "Read-back verified Junior FDE skill links, seven detailed Introduction sections, HTML architecture/data-flow diagram and existing Media Library cover (reused).",
+      "started_at": "2026-10-10T08:45:39.356Z",
+      "finished_at": "2026-10-10T09:03:23.883Z",
+      "updated_by": "api-key:for-chatgpt-test-2",
+      "outputs": {
+        "portal_url": "/practical-case/multi-provider-llm-routing-gateway",
+        "intro_sections": 7,
+        "skills_linked": 6,
+        "cover_reused": true,
+        "level": "junior"
+      }
+    },
+    "repo": {
+      "status": "done",
+      "summary": "Completed six cumulative FastAPI learning branches, cleaned STEP-N files per branch, promoted STEP-6 to main and added FINAL.crd/README. Verified 7/7 branch/main GitHub Actions Validate runs successful and final Python verification successful (local offline provider fixtures).",
+      "outputs": {
+        "repo_url": "https://github.com/Inkplain-Practical-Cases/practical--multi-provider-llm-routing-gateway",
+        "steps_started": 2,
+        "steps_required": 6,
+        "steps_written": 6,
+        "main_finalized": true,
+        "ci_verified": true,
+        "steps": 6,
+        "branch_checks_success": 7,
+        "branch_checks_total": 7,
+        "python_verification_success": true
+      },
+      "started_at": "2026-10-10T09:36:22.448Z",
+      "finished_at": "2026-10-10T12:07:07.384Z",
+      "updated_by": "api-key:for-chatgpt-test-2"
+    },
+    "content": {
+      "status": "in_progress",
+      "summary": "Created eight categories and all 18 Overview lessons; step lessons are being populated and checked, GitHub CI verification remains open.",
+      "outputs": {
+        "categories_created": 8,
+        "overview_lessons": 18,
+        "step_lessons_written": 8
+      },
+      "started_at": "2026-10-10T11:58:49.601Z",
+      "finished_at": null,
+      "updated_by": "api-key:for-chatgpt-test-2"
+    }
+  },
+  "updated_at": "2026-10-10T12:07:07.384Z"
+}
