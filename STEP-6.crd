@@ -1,8 +1,8 @@
 {
   "version": "1.0",
-  "name": "Multi-provider gateway STEP-5",
+  "name": "Multi-provider gateway STEP-6",
   "source": {
-    "revision": "step-05-gateway-errors-and-request-tracing"
+    "revision": "step-06-deployment-readiness-and-regression-test"
   },
   "flows": [
     {
@@ -11,11 +11,11 @@
     }
   ],
   "step": {
-    "no": 5,
+    "no": 6,
     "of": 6,
-    "title": "Gateway errors and request tracing",
-    "branch": "step-05-gateway-errors-and-request-tracing",
-    "previous": "STEP-4.crd",
+    "title": "Deployment readiness and regression tests",
+    "branch": "step-06-deployment-readiness-and-regression-test",
+    "previous": "STEP-5.crd",
     "removed": []
   },
   "components": [
@@ -32,7 +32,7 @@
       "source": {
         "file": "app/feature_completion/router.py",
         "symbol": "complete",
-        "revision": "step-05-gateway-errors-and-request-tracing",
+        "revision": "step-06-deployment-readiness-and-regression-test",
         "lines": [
           1,
           14
@@ -77,7 +77,7 @@
         }
       ],
       "attributes": {},
-      "step_change": "changed"
+      "step_change": "unchanged"
     },
     {
       "id": "be.handle_completion",
@@ -92,7 +92,7 @@
       "source": {
         "file": "app/feature_completion/handlers/handle_completion.py",
         "symbol": "handle_completion",
-        "revision": "step-05-gateway-errors-and-request-tracing",
+        "revision": "step-06-deployment-readiness-and-regression-test",
         "lines": [
           1,
           9
@@ -147,7 +147,7 @@
       "source": {
         "file": "app/feature_completion/services/service_complete.py",
         "symbol": "service_complete",
-        "revision": "step-05-gateway-errors-and-request-tracing",
+        "revision": "step-06-deployment-readiness-and-regression-test",
         "lines": [
           1,
           12
@@ -228,7 +228,7 @@
       "source": {
         "file": "app/providers/provider_catalog.py",
         "symbol": "ProviderCatalog.resolve",
-        "revision": "step-05-gateway-errors-and-request-tracing",
+        "revision": "step-06-deployment-readiness-and-regression-test",
         "lines": [
           1,
           15
@@ -269,7 +269,7 @@
       "source": {
         "file": "app/providers/provider_openai_fake.py",
         "symbol": "ProviderOpenAIFake.complete",
-        "revision": "step-05-gateway-errors-and-request-tracing",
+        "revision": "step-06-deployment-readiness-and-regression-test",
         "lines": [
           1,
           6
@@ -310,7 +310,7 @@
       "source": {
         "file": "app/providers/provider_claude_fake.py",
         "symbol": "ProviderClaudeFake.complete",
-        "revision": "step-05-gateway-errors-and-request-tracing",
+        "revision": "step-06-deployment-readiness-and-regression-test",
         "lines": [
           1,
           5
