@@ -26,7 +26,7 @@
         "theory_items": 16
       },
       "status": "in_progress",
-      "summary": "Stage 4 partial QA: STEP-5 Run & check now explicitly documents offline failing fake-provider test and safe HTTP 503 response. GitHub source link retained. Final 45-lesson semantic/source-link audit remains.",
+      "summary": "Stage 4 partial: STEP-1 pytest lesson and exact GitHub test link saved/read back; STEP-3 six source links corrected and verified. Inspected 18 STEP design/components/implementation lessons, main CI success and six INKP tabs with zero missing links. Full 45-item semantic/source audit remains.",
       "updated_by": "api-key:for-chatgpt-test-2",
       "finished_at": null
     },
@@ -79,5 +79,5 @@
       "updated_by": "api-key:for-chatgpt-test-2"
     }
   },
-  "updated_at": "2026-10-10T20:39:56.308Z"
+  "updated_at": "2026-10-10T22:14:31.978Z"
 }
