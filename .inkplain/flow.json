@@ -6,78 +6,78 @@
   },
   "current": "content",
   "stages": {
-    "repo": {
-      "status": "done",
+    "content": {
+      "started_at": "2026-10-10T11:58:49.601Z",
       "outputs": {
-        "steps_required": 6,
-        "steps": 6,
-        "branch_checks_success": 7,
-        "steps_started": 2,
-        "repo_url": "https://github.com/Inkplain-Practical-Cases/practical--multi-provider-llm-routing-gateway",
-        "branch_checks_total": 7,
-        "python_verification_success": true,
-        "steps_written": 6,
-        "main_finalized": true,
-        "ci_verified": true
+        "content_quality_qa": true,
+        "inkp_tabs": 6,
+        "categories_created": 8,
+        "structural_qa": true,
+        "portal_url": "/practical-case/multi-provider-llm-routing-gateway",
+        "step_lessons_written": 8,
+        "missing_links": 0,
+        "overview_lessons": 18,
+        "categories": 8,
+        "conclusion": 3,
+        "step_lessons": 24,
+        "ci_success": true,
+        "items": 45,
+        "overview": 18,
+        "theory_items": 16
       },
-      "summary": "Completed six cumulative FastAPI learning branches, cleaned STEP-N files per branch, promoted STEP-6 to main and added FINAL.crd/README. Verified 7/7 branch/main GitHub Actions Validate runs successful and final Python verification successful (local offline provider fixtures).",
-      "started_at": "2026-10-10T09:36:22.448Z",
-      "finished_at": "2026-10-10T12:07:07.384Z",
+      "status": "in_progress",
+      "summary": "45 lessons and six INKP tabs exist, but final source-link/semantic review remains open; do not count Stage 4 as accepted yet.",
+      "updated_by": "api-key:for-chatgpt-test-2",
+      "finished_at": null
+    },
+    "intro": {
+      "started_at": "2026-10-10T08:45:39.356Z",
+      "outputs": {
+        "skills_linked": 6,
+        "portal_url": "/practical-case/multi-provider-llm-routing-gateway",
+        "level": "junior",
+        "cover_reused": true,
+        "intro_sections": 7
+      },
+      "finished_at": "2026-10-10T09:03:23.883Z",
+      "status": "done",
+      "summary": "Read-back verified Junior FDE skill links, seven detailed Introduction sections, HTML architecture/data-flow diagram and existing Media Library cover (reused).",
       "updated_by": "api-key:for-chatgpt-test-2"
     },
-    "inkp": {
+    "repo": {
       "updated_by": "api-key:for-chatgpt-test-2",
-      "started_at": "2026-10-10T12:07:26.435Z",
+      "summary": "Completed six cumulative FastAPI learning branches, cleaned STEP-N files per branch, promoted STEP-6 to main and added FINAL.crd/README. Verified 7/7 branch/main GitHub Actions Validate runs successful and final Python verification successful (local offline provider fixtures).",
+      "finished_at": "2026-10-10T12:07:07.384Z",
+      "status": "done",
+      "started_at": "2026-10-10T09:36:22.448Z",
       "outputs": {
-        "tabs": 6,
+        "steps_written": 6,
+        "branch_checks_success": 7,
+        "python_verification_success": true,
+        "steps": 6,
+        "steps_started": 2,
+        "steps_required": 6,
+        "ci_verified": true,
+        "main_finalized": true,
+        "repo_url": "https://github.com/Inkplain-Practical-Cases/practical--multi-provider-llm-routing-gateway",
+        "branch_checks_total": 7
+      }
+    },
+    "inkp": {
+      "status": "done",
+      "outputs": {
         "linked_executor_docs": 34,
         "documents": 40,
         "inkp_path": "multi-provider-llm-routing-gateway.inkp",
         "missing_links": 0,
-        "inkp_url": "https://github.com/Inkplain-Practical-Cases/practical--multi-provider-llm-routing-gateway/blob/main/multi-provider-llm-routing-gateway.inkp"
+        "inkp_url": "https://github.com/Inkplain-Practical-Cases/practical--multi-provider-llm-routing-gateway/blob/main/multi-provider-llm-routing-gateway.inkp",
+        "tabs": 6
       },
-      "summary": "Verified importable .inkp on main with six ordered STEP-1..STEP-6 tabs, 34 linked Process Executor documents, 40 total docs and zero missing linked documents; STEP-3 change tracking corrected and simulator resynced.",
       "finished_at": "2026-10-10T12:07:26.435Z",
-      "status": "done"
-    },
-    "content": {
-      "finished_at": null,
-      "status": "in_progress",
-      "summary": "STEP-6 component GitHub links reordered directly after matching explanations and verified; full 45-lesson semantic/source audit remains open.",
-      "outputs": {
-        "structural_qa": true,
-        "inkp_tabs": 6,
-        "conclusion": 3,
-        "step_lessons_written": 8,
-        "categories": 8,
-        "items": 45,
-        "overview_lessons": 18,
-        "content_quality_qa": true,
-        "missing_links": 0,
-        "theory_items": 16,
-        "portal_url": "/practical-case/multi-provider-llm-routing-gateway",
-        "categories_created": 8,
-        "step_lessons": 24,
-        "ci_success": true,
-        "overview": 18
-      },
-      "started_at": "2026-10-10T11:58:49.601Z",
+      "started_at": "2026-10-10T12:07:26.435Z",
+      "summary": "Verified importable .inkp on main with six ordered STEP-1..STEP-6 tabs, 34 linked Process Executor documents, 40 total docs and zero missing linked documents; STEP-3 change tracking corrected and simulator resynced.",
       "updated_by": "api-key:for-chatgpt-test-2"
-    },
-    "intro": {
-      "finished_at": "2026-10-10T09:03:23.883Z",
-      "outputs": {
-        "cover_reused": true,
-        "intro_sections": 7,
-        "level": "junior",
-        "skills_linked": 6,
-        "portal_url": "/practical-case/multi-provider-llm-routing-gateway"
-      },
-      "updated_by": "api-key:for-chatgpt-test-2",
-      "summary": "Read-back verified Junior FDE skill links, seven detailed Introduction sections, HTML architecture/data-flow diagram and existing Media Library cover (reused).",
-      "status": "done",
-      "started_at": "2026-10-10T08:45:39.356Z"
     }
   },
-  "updated_at": "2026-10-10T16:10:25.264Z"
+  "updated_at": "2026-10-10T17:02:16.603Z"
 }
