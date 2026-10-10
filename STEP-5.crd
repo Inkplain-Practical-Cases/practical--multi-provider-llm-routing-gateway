@@ -1,8 +1,8 @@
 {
   "version": "1.0",
-  "name": "Multi-provider gateway STEP-4",
+  "name": "Multi-provider gateway STEP-5",
   "source": {
-    "revision": "step-04-bounded-provider-fallback"
+    "revision": "step-05-gateway-errors-and-request-tracing"
   },
   "flows": [
     {
@@ -11,11 +11,11 @@
     }
   ],
   "step": {
-    "no": 4,
+    "no": 5,
     "of": 6,
-    "title": "Bounded provider fallback",
-    "branch": "step-04-bounded-provider-fallback",
-    "previous": "STEP-3.crd",
+    "title": "Gateway errors and request tracing",
+    "branch": "step-05-gateway-errors-and-request-tracing",
+    "previous": "STEP-4.crd",
     "removed": []
   },
   "components": [
@@ -25,14 +25,14 @@
       "kind": "function",
       "side": "backend",
       "layer": "door",
-      "description": "STEP-2 complete: door responsibility with deterministic adapter behavior.",
+      "description": "Map exhausted upstream network failures to non-sensitive 503 error response.",
       "flows": [
         "completion"
       ],
       "source": {
         "file": "app/feature_completion/router.py",
         "symbol": "complete",
-        "revision": "step-04-bounded-provider-fallback",
+        "revision": "step-05-gateway-errors-and-request-tracing",
         "lines": [
           1,
           14
@@ -77,7 +77,7 @@
         }
       ],
       "attributes": {},
-      "step_change": "unchanged"
+      "step_change": "changed"
     },
     {
       "id": "be.handle_completion",
@@ -92,7 +92,7 @@
       "source": {
         "file": "app/feature_completion/handlers/handle_completion.py",
         "symbol": "handle_completion",
-        "revision": "step-04-bounded-provider-fallback",
+        "revision": "step-05-gateway-errors-and-request-tracing",
         "lines": [
           1,
           9
@@ -147,7 +147,7 @@
       "source": {
         "file": "app/feature_completion/services/service_complete.py",
         "symbol": "service_complete",
-        "revision": "step-04-bounded-provider-fallback",
+        "revision": "step-05-gateway-errors-and-request-tracing",
         "lines": [
           1,
           12
@@ -213,7 +213,7 @@
         }
       ],
       "attributes": {},
-      "step_change": "changed"
+      "step_change": "unchanged"
     },
     {
       "id": "be.catalog_resolve",
@@ -228,7 +228,7 @@
       "source": {
         "file": "app/providers/provider_catalog.py",
         "symbol": "ProviderCatalog.resolve",
-        "revision": "step-04-bounded-provider-fallback",
+        "revision": "step-05-gateway-errors-and-request-tracing",
         "lines": [
           1,
           15
@@ -269,7 +269,7 @@
       "source": {
         "file": "app/providers/provider_openai_fake.py",
         "symbol": "ProviderOpenAIFake.complete",
-        "revision": "step-04-bounded-provider-fallback",
+        "revision": "step-05-gateway-errors-and-request-tracing",
         "lines": [
           1,
           6
@@ -310,7 +310,7 @@
       "source": {
         "file": "app/providers/provider_claude_fake.py",
         "symbol": "ProviderClaudeFake.complete",
-        "revision": "step-04-bounded-provider-fallback",
+        "revision": "step-05-gateway-errors-and-request-tracing",
         "lines": [
           1,
           5
