@@ -140,7 +140,7 @@
       "kind": "function",
       "side": "backend",
       "layer": "service",
-      "description": "STEP-2 service_complete: service responsibility with deterministic adapter behavior.",
+      "description": "STEP-3 service_complete passes prompt context into ProviderCatalog.resolve while preserving the stable completion response.",
       "flows": [
         "completion"
       ],
@@ -212,8 +212,10 @@
           "description": "Typed response or provider output"
         }
       ],
-      "attributes": {},
-      "step_change": "unchanged"
+      "attributes": {
+        "step_note": "Pass request.prompt into catalog.resolve(preferred_provider, prompt), enabling prompt-aware routing."
+      },
+      "step_change": "changed"
     },
     {
       "id": "be.catalog_resolve",
@@ -253,7 +255,9 @@
           "description": "Typed response or provider output"
         }
       ],
-      "attributes": {},
+      "attributes": {
+        "step_note": "Auto mode now selects Claude above 500 prompt characters; explicit provider names bypass the heuristic."
+      },
       "step_change": "changed"
     },
     {
