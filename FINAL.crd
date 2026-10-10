@@ -1,8 +1,8 @@
 {
   "version": "1.0",
-  "name": "Multi-provider gateway STEP-6",
+  "name": "Multi-provider gateway FINAL",
   "source": {
-    "revision": "step-06-deployment-readiness-and-regression-test"
+    "revision": "main"
   },
   "flows": [
     {
@@ -11,11 +11,11 @@
     }
   ],
   "step": {
-    "no": 6,
+    "no": "final",
     "of": 6,
-    "title": "Deployment readiness and regression tests",
-    "branch": "step-06-deployment-readiness-and-regression-test",
-    "previous": "STEP-5.crd",
+    "title": "Final gateway",
+    "branch": "main",
+    "previous": "STEP-6.crd",
     "removed": []
   },
   "components": [
@@ -32,7 +32,7 @@
       "source": {
         "file": "app/feature_completion/router.py",
         "symbol": "complete",
-        "revision": "step-06-deployment-readiness-and-regression-test",
+        "revision": "main",
         "lines": [
           1,
           14
@@ -92,7 +92,7 @@
       "source": {
         "file": "app/feature_completion/handlers/handle_completion.py",
         "symbol": "handle_completion",
-        "revision": "step-06-deployment-readiness-and-regression-test",
+        "revision": "main",
         "lines": [
           1,
           9
@@ -147,7 +147,7 @@
       "source": {
         "file": "app/feature_completion/services/service_complete.py",
         "symbol": "service_complete",
-        "revision": "step-06-deployment-readiness-and-regression-test",
+        "revision": "main",
         "lines": [
           1,
           12
@@ -228,7 +228,7 @@
       "source": {
         "file": "app/providers/provider_catalog.py",
         "symbol": "ProviderCatalog.resolve",
-        "revision": "step-06-deployment-readiness-and-regression-test",
+        "revision": "main",
         "lines": [
           1,
           15
@@ -269,7 +269,7 @@
       "source": {
         "file": "app/providers/provider_openai_fake.py",
         "symbol": "ProviderOpenAIFake.complete",
-        "revision": "step-06-deployment-readiness-and-regression-test",
+        "revision": "main",
         "lines": [
           1,
           6
@@ -310,7 +310,7 @@
       "source": {
         "file": "app/providers/provider_claude_fake.py",
         "symbol": "ProviderClaudeFake.complete",
-        "revision": "step-06-deployment-readiness-and-regression-test",
+        "revision": "main",
         "lines": [
           1,
           5
