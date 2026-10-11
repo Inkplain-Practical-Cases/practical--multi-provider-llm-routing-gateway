@@ -26,10 +26,12 @@
         "theory_items": 16,
         "run_test_links_verified": 6,
         "step6_ci_verified": true,
-        "portal_final_audit_complete": false
+        "portal_final_audit_complete": false,
+        "future_tasks_crd_tree_fixed": true,
+        "crd_matrix_checked": true
       },
       "status": "in_progress",
-      "summary": "Stage-4 QA continues: read 23 of 24 STEP lessons (one STEP-6 Run read blocked by safety filter); structural CRD, INKP and GitHub links inspected. Six INKP tabs/zero missing documents and latest main CI successful (runs 38101850744/745). Full semantic/source-link and remaining item audit required.",
+      "summary": "All 45 portal lessons read and checked structurally; STEP-1..6 and FINAL CRD lineage verified, including retired STEP-1 fake. Added and read back the missing FINAL CRD tree in Future Tasks. Full source-link and semantic QA remains.",
       "updated_by": "api-key:for-chatgpt-test-2",
       "finished_at": null
     },
@@ -82,5 +84,5 @@
       "updated_by": "api-key:for-chatgpt-test-2"
     }
   },
-  "updated_at": "2026-10-11T02:10:19.320Z"
+  "updated_at": "2026-10-11T03:17:17.052Z"
 }
