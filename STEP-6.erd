@@ -1,0 +1,71 @@
+{
+  "erd_version": 1,
+  "name": "multi-provider-llm-routing-gateway",
+  "step": 6,
+  "engine": "sqlite",
+  "generated_from": [
+    "app/providers/provider_record_request_audit.py",
+    "app/core/request_audit_middleware.py",
+    "app/main.py"
+  ],
+  "entities": [
+    {
+      "name": "llm_api_requests",
+      "kind": "table",
+      "step_change": "added",
+      "source": "app/providers/provider_record_request_audit.py",
+      "description": "LLM API request metadata without prompt text, tokens or completions.",
+      "fields": [
+        {
+          "name": "id",
+          "type": "TEXT",
+          "key": "PK"
+        },
+        {
+          "name": "route",
+          "type": "TEXT"
+        },
+        {
+          "name": "method",
+          "type": "TEXT"
+        },
+        {
+          "name": "created_at",
+          "type": "TEXT"
+        }
+      ]
+    },
+    {
+      "name": "llm_api_events",
+      "kind": "table",
+      "step_change": "added",
+      "source": "app/providers/provider_record_request_audit.py",
+      "description": "HTTP response outcome for an LLM API request.",
+      "fields": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "key": "PK"
+        },
+        {
+          "name": "request_id",
+          "type": "TEXT",
+          "references": "llm_api_requests.id"
+        },
+        {
+          "name": "http_status",
+          "type": "INTEGER"
+        },
+        {
+          "name": "duration_ms",
+          "type": "REAL"
+        },
+        {
+          "name": "occurred_at",
+          "type": "TEXT"
+        }
+      ]
+    }
+  ],
+  "relations": []
+}
