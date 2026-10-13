@@ -10,7 +10,7 @@
       "updated_by": "api-key:for-chatgpt-test-2",
       "finished_at": "2026-10-11T08:37:11.975Z",
       "status": "done",
-      "summary": "Source-backed persistence audit completed: ProviderCatalog keeps offline adapters in a process-local map; service computes trace hashes but stores no persistent request records. No source-derived STEP-N.erd or Database lesson required.",
+      "summary": "STEP-6 SQLite LLM API request-event relational audit, ERD file, Simulator tab and second-position portal lesson created and verified.",
       "started_at": "2026-10-10T11:58:49.601Z",
       "outputs": {
         "future_tasks_crd_tree_fixed": true,
@@ -34,9 +34,11 @@
         "portal_url": "/practical-case/multi-provider-llm-routing-gateway",
         "step6_ci_verified": true,
         "erd_audit_complete": true,
-        "erd_applicable_steps": [],
-        "erd_not_applicable": true,
-        "erd_lessons_created": 0,
+        "erd_applicable_steps": [
+          6
+        ],
+        "erd_not_applicable": false,
+        "erd_lessons_created": 1,
         "erd_item_title": "Database (Entity) Relations",
         "erd_audit_note": "ProviderCatalog keeps offline adapters in a process-local map; service computes trace hashes but stores no persistent request records."
       }
@@ -90,5 +92,5 @@
       "updated_by": "api-key:for-chatgpt-test-2"
     }
   },
-  "updated_at": "2026-10-13T15:14:29.909Z"
+  "updated_at": "2026-10-13T16:06:19.909Z"
 }
