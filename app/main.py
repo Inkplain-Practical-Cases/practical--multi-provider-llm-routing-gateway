@@ -4,3 +4,7 @@ from app.feature_completion.router import router
 
 app = FastAPI(title='Multi-Provider LLM Routing Gateway — STEP-1')
 app.include_router(router)
+
+# Add privacy-safe persistent gateway outcome audit after route registration.
+from app.core.request_audit_middleware import RequestAuditMiddleware
+app.add_middleware(RequestAuditMiddleware)
